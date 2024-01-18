@@ -1,14 +1,12 @@
 const ServiceRequest = () => {
     return ( 
         <div className="">
-            <div>
-                <h1>Title</h1>
-            </div>
+            <div className="py-10 font-bold text-5xl text-center">Service Request</div>
             <form action="">
                 <div className="grid grid-cols-3">
-                    <div>
-                        <label for="">Branch</label>
-                        <select>
+                    <div className="mb-5">
+                        <label for="" className="px-5 font-semibold text-xl">Branch</label>
+                        <select className="text-xl">
                             <option value="ab">Administrative Branch</option>
                             <option value="pfmb">Planning, Finance, and Management Branch</option>
                         </select>
@@ -35,7 +33,7 @@ const ServiceRequest = () => {
                 <div className="grid grid-cols-4 gap-5">
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                            <img className="rounded-t-lg" src="../public/cards/hardware.png" alt="" />
                         </a>
                         <div className="p-5">
                             <a href="#">
@@ -52,7 +50,7 @@ const ServiceRequest = () => {
                     </div>
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                            <img className="rounded-t-lg" src="../public/cards/software.png" alt="" />
                         </a>
                         <div className="p-5">
                             <a href="#">
@@ -69,7 +67,7 @@ const ServiceRequest = () => {
                     </div>
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                            <img className="rounded-t-lg" src="../public/cards/network.png" alt="" />
                         </a>
                         <div className="p-5">
                             <a href="#">
@@ -86,7 +84,7 @@ const ServiceRequest = () => {
                     </div>
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                            <img className="rounded-t-lg" src="../public/cards/others.png" alt="" />
                         </a>
                         <div className="p-5">
                             <a href="#">
