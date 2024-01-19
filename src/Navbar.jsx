@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return ( 
         <div>
-        <nav className="bg-red-500 border-gray-200 dark:bg-gray-900">
+        <nav className="w-full border-gray-200 dark:bg-gray-900 fixed">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://ntc.gov.ph/" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../public/ntc_logo.png" className="h-8" alt="Flowbite Logo" />
