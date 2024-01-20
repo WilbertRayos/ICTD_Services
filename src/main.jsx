@@ -13,6 +13,8 @@ import NavbarWrapper from './NavbarWrapper.jsx';
 import About from './About.jsx';
 import Contacts from './Contacts.jsx';
 
+document.documentElement.classList.add('scroll-smooth');
+
 const router = createBrowserRouter([
   {
     path: "/",
