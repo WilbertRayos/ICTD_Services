@@ -1,6 +1,6 @@
 const About = () => {
     return (
-      <div className="w-full h-screen flex justify-center items-center">
+      <div className="min-w-full min-h-screen flex justify-center items-center">
         <div className="grid grid-cols-2 gap-8">
           {/* 1 */}
           <div className="flex bg-gray-900 border border-gray-500 shadow-md rounded-lg p-2 col-span-2 max-w-xl mx-auto transition ease-in-out hover:scale-110 hover:shadow-2xl hover:bg-white">
