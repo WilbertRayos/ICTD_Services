@@ -1,45 +1,159 @@
 const ServiceRequest = () => {
     return ( 
-        <div className="min-w-full min-h-screen grid place-items-center bg-[url('../public/sr_bg.jpg')] bg-center bg-no-repeat bg-cover">
-            <div className="grid md:grid-cols-2">
+        <div className="min-h-screen place-items-center bg-[url('../public/sr_bg.jpg')] bg-center bg-no-repeat bg-cover">
+            <div className="max-w-fit mx-auto bg-red-500">
+                <div className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12">
+                    <div className="sm:w-1/2">
+                        <h1 className="text-3xl text-center">
+                            Service Request
+                        </h1>
+                        <div className="bg-amber-500 my-5 px-2 py-5 border rounded shadow-sm">
+                            <form>
+                                <div className="flex flex-col">
+                                    <label for="" className=" text-sm text-gray-700 dark:text-gray-100 p-1">BRANCH</label>
+                                    <select className="text-sm border border-gray-200 rounded-md">
+                                        <option value="ab">Administrative Branch</option>
+                                        <option value="pfmb">Planning, Finance, and Management Branch</option>
+                                    </select>
+                                </div>
+                                <div className="flex flex-col">
+                                    <label for="" className=" text-sm text-gray-700 dark:text-gray-100 p-1">DIVISION</label>
+                                    <select className="text-sm border border-gray-200 rounded-md">
+                                        <option value="ab">Administrative Branch</option>
+                                        <option value="pfmb">Planning, Finance, and Management Branch</option>
+                                    </select>
+                                </div>
+                                <div className="flex flex-col">
+                                    <label for="" className=" text-sm text-gray-700 dark:text-gray-100 p-1">UNIT</label>
+                                    <select className="text-sm border border-gray-200 rounded-md">
+                                        <option value="ab">Administrative Branch</option>
+                                        <option value="pfmb">Planning, Finance, and Management Branch</option>
+                                    </select>
+                                </div>
+                                <div className="flex flex-col">
+                                    <label for="" className=" text-sm text-gray-700 dark:text-gray-100 tracking-wide py-1">REQUESTOR</label>
+                                    <input className="border border-gray-200 rounded-md p-1 text-sm" type="text" name="" id="" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <label for="" className=" text-sm text-gray-700 dark:text-gray-100 tracking-wide py-1">ISSUE/S ENCOUNTERED</label>
+                                    <textarea className="border border-gray-200 rounded-md p-1 text-sm resize-none" name="" id="" cols="40" rows="5" placeholder="Please specify issue/s you encountered..."></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 grid-rows-2 gap-5 bg-green-500">
+                        <div className="sm:col-span-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
+                            <a href="#">
+                                <img className="w-full h-32 object-cover" src="../public/cards/hardware.png" alt="" />
+                            </a>
+                            <div className="p-1">
+                                <a href="#">
+                                    <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hardware</h5>
+                                </a>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">CPU</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Monitor</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Printer/Scanner</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Laptop</label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
+                            <a href="#">
+                                <img className="w-full h-32 object-cover" src="../public/cards/hardware.png" alt="" />
+                            </a>
+                            <div className="p-1">
+                                <a href="#">
+                                    <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hardware</h5>
+                                </a>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">CPU</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Monitor</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Printer/Scanner</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Laptop</label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="">
+                            asdasdasd
+                        </div>
+                        <div className="">
+                            asdasdasd
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="container grid md:grid-cols-2">
                 <div className="col-span-2 bg-red-900 text-center my-5">
                     <h1 className="font-bold text-5xl">Service Request</h1>
                 </div>
-                <div className="col-span-2 md:col-span-1 dark:bg-gray-900 border border-gray-200 rounded-xl shadow-black shadow-md p-5">
+                <div className="col-span-2 md:col-span-1 dark:bg-gray-900 border border-gray-200 rounded-xl shadow-black shadow-md p-5 opacity-40">
                     <div className="flex flex-col px-5">
-                         <label for="" className="font-semibold text-xl text-gray-100 tracking-wide py-2">Branch</label>
+                         <label for="" className="font-semibold text-xl text-gray-700 dark:text-gray-100 tracking-wide py-2 ">BRANCH</label>
                          <select className="text-xl border border-gray-200 rounded-md p-1 tracking-wide">
                              <option value="ab">Administrative Branch</option>
                              <option value="pfmb">Planning, Finance, and Management Branch</option>
                          </select>
                     </div>
                     <div className="flex flex-col px-5">
-                         <label for="" className="font-semibold text-xl text-gray-100 tracking-wide py-2">Division</label>
+                         <label for="" className="font-semibold text-xl text-gray-700 dark:text-gray-100 tracking-wide py-2">DIVISION</label>
                          <select className="text-xl border border-gray-200 rounded-md p-1 tracking-wide">
                              <option value="ab">Administrative Branch</option>
                              <option value="pfmb">Planning, Finance, and Management Branch</option>
                          </select>
                     </div>
                     <div className="flex flex-col px-5">
-                         <label for="" className="font-semibold text-xl text-gray-100 tracking-wide py-2">Unit</label>
+                         <label for="" className="font-semibold text-xl text-gray-700 dark:text-gray-100 tracking-wide py-2">UNIT</label>
                          <select className="text-xl border border-gray-200 rounded-md p-1 tracking-wide">
                              <option value="ab">Administrative Branch</option>
                              <option value="pfmb">Planning, Finance, and Management Branch</option>
                          </select>
                     </div>
                     <div className="flex flex-col px-5">
-                        <label for="" className="font-semibold text-xl text-gray-100 tracking-wide py-2">Requestor</label>
+                        <label for="" className="font-semibold text-xl text-gray-700 dark:text-gray-100 tracking-wide py-2">REQUESTOR</label>
                         <input className="border border-gray-200 rounded-md p-1 text-xl tracking-wide" type="text" name="" id="" />
                     </div>
                     <div className="flex flex-col px-5 mb-5">
-                        <label for="" className="font-semibold text-xl text-gray-100 tracking-wide py-2">Issue/s Encountered</label>
+                        <label for="" className="font-semibold text-xl text-gray-700 dark:text-gray-100 tracking-wide py-2">ISSUE/S ENCOUNTERED</label>
                         <textarea className="border border-gray-200 rounded-md p-1 text-xl tracking-wide resize-none" name="" id="" cols="40" rows="5" placeholder="Please specify issue/s you encountered..."></textarea>
                     </div>
                 </div>
-                <div className="grid col-span-2 md:col-span-1">
-                    <div className="max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out">
+                <div className="grid grid-cols-2 sm:col-span-2 md:col-span-1 bg-green-500">
+                    asd
+                    <div className="bg-red-500">
+                        <img className="w-full h-48 object-cover" src="../public/cards/hardware.png" alt="" />
+                        <div>
+                            <span>A</span>
+                            <span className="block">b</span>
+                        </div>
+                    </div>
+                    <div className="sm:max-w-full sm:min-w-[612px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out">
                         <a href="#">
-                            <img className="rounded-t-lg max-h-fit" src="../public/cards/hardware.png" alt="" />
+                            <img className="w-full h-56 object-cover" src="../public/cards/hardware.png" alt="" />
                         </a>
                         <div className="p-1">
                             <a href="#">
@@ -65,7 +179,35 @@ const ServiceRequest = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                    <div className="max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out">
+                        <a href="#">
+                            <img className="rounded-t-lg max-h-fit object-cover" src="../public/cards/hardware.png" alt="" />
+                        </a>
+                        <div className="p-1">
+                            <a href="#">
+                                <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hardware</h5>
+                            </a>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
+                                <div>
+                                    <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                    <label for="html">CPU</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                    <label for="html">Monitor</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                    <label for="html">Printer/Scanner</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                    <label for="html">Laptop</label>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div> */}
                 {/* <div className="flex justify-center items-center">
                     <div className="max-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out">
                         <a href="#">
@@ -96,7 +238,7 @@ const ServiceRequest = () => {
                         </div>
                     </div>
                 </div> */}
-            </div>
+            {/* </div> */}
 {/*             
             <div className="grid grid-cols-1 md:grid-cols-2 mx-auto md:mx-96">
                 <div className="dark:bg-gray-900 border border-gray-200 rounded-xl shadow-black shadow-md">
