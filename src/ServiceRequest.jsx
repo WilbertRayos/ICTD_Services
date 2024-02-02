@@ -41,8 +41,8 @@ const ServiceRequest = () => {
                             </form>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-2 gap-5 bg-green-500">
-                        <div className="sm:col-span-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 bg-green-500 min-w-full sm:min-w-fit">
+                        <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
                             <a href="#">
                                 <img className="w-full h-32 object-cover" src="../public/cards/hardware.png" alt="" />
                             </a>
@@ -98,11 +98,61 @@ const ServiceRequest = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="">
-                            asdasdasd
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
+                            <a href="#">
+                                <img className="w-full h-32 object-cover" src="../public/cards/hardware.png" alt="" />
+                            </a>
+                            <div className="p-1">
+                                <a href="#">
+                                    <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hardware</h5>
+                                </a>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">CPU</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Monitor</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Printer/Scanner</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Laptop</label>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
-                        <div className="">
-                            asdasdasd
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-90 hover:opacity-100 hover:scale-110 transition ease-in-out overflow-hidden">
+                            <a href="#">
+                                <img className="w-full h-32 object-cover" src="../public/cards/hardware.png" alt="" />
+                            </a>
+                            <div className="p-1">
+                                <a href="#">
+                                    <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hardware</h5>
+                                </a>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">CPU</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Monitor</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Printer/Scanner</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" className="mx-1" />
+                                        <label for="html">Laptop</label>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
