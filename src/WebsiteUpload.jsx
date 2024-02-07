@@ -1,6 +1,7 @@
 const WebsiteUpload = () => {
   return (
-    <div className="min-h-screen w-full flex justify-center items-center bg-[url('../public/wu_bg.jpg')] bg-center bg-no-repeat bg-cover">
+    <div className="min-h-screen w-full flex place-items-center bg-[url('../public/bg6.jpg')] bg-center bg-no-repeat bg-cover">
+      {/* <div className="min-h-screen w-full flex place-items-center bg-[#EDEEEB]"> */}
       <div className="w-full">
         <div className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-5">
           <div className="min-w-full sm:min-w-fit sm:w-1/2 m-auto sm:ml-24 ">
@@ -196,7 +197,7 @@ const WebsiteUpload = () => {
           </div>
           <div className="bg-[#31393C] sm:ml-5 p-8 border rounded-lg min-w-full sm:min-w-fit sm:w-1/2 mr-0 sm:mr-24">
             <div className="flex flex-col">
-              <label className="font-semibold mb-2 text-[#EDEEEB]">DATE</label>
+              <label className="font-semibold my-2 text-[#EDEEEB]">DATE</label>
               <input
                 type="text"
                 name=""
