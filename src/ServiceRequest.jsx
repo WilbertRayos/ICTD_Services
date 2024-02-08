@@ -1,6 +1,9 @@
 const ServiceRequest = () => {
   return (
-    <div className="flex min-h-screen w-full place-items-center bg-[url('../public/bg1.jpg')] bg-center bg-no-repeat bg-cover">
+    <div
+      className="flex min-h-screen w-full place-items-center bg-[url('../public/bg1.jpg')] bg-center bg-no-repeat bg-cover"
+      id="ServiceRequest"
+    >
       {/* <div className="flex min-h-screen w-full place-items-center bg-[#CCC7BF]"> */}
       <div className="w-full">
         <div className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 sm:mx-40">

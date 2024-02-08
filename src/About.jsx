@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div className="min-w-full min-h-screen flex justify-center items-center">
+    <div
+      className="min-w-full min-h-screen flex justify-center items-center bg-[url('../public/bg3.jpg')] bg-center bg-no-repeat bg-cover"
+      id="About"
+    >
       <div className="grid grid-cols-2 gap-5">
         {/* 1 */}
         <div className="min-w-[400px] flex bg-[#EDEEEB] border border-[#31393C] shadow-md rounded-lg p-2 col-span-2 max-w-xl mx-auto transition ease-in-out hover:scale-110 hover:shadow-2xl">

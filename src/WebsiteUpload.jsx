@@ -1,6 +1,9 @@
 const WebsiteUpload = () => {
   return (
-    <div className="min-h-screen w-full flex place-items-center bg-[url('../public/bg6.jpg')] bg-center bg-no-repeat bg-cover">
+    <div
+      className="min-h-screen w-full flex place-items-center bg-[url('../public/bg6.jpg')] bg-center bg-no-repeat bg-cover"
+      id="WebsiteUpload"
+    >
       {/* <div className="min-h-screen w-full flex place-items-center bg-[#EDEEEB]"> */}
       <div className="w-full">
         <div className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-5">
@@ -177,7 +180,7 @@ const WebsiteUpload = () => {
                     id=""
                     cols="10"
                     rows="5"
-                    className="resize-none min-w-fit p-3 rounded-md"
+                    className="resize-none min-w-fit p-3 rounded-md border-[1px] border-[#31393C]"
                     placeholder="Please specify the page where to upload the file/s..."
                   ></textarea>
                 </div>

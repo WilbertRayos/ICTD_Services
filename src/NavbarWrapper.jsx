@@ -9,9 +9,6 @@ const NavbarWrapper = () => {
   return (
     <>
       <Navbar />
-      {/* <div className="mx-40 bg-amber-700">
-                <Outlet />
-            </div> */}
       <ServiceRequest />
       <WebsiteUpload />
       <About />
