@@ -1,4 +1,12 @@
+import React, { useState, useEffect } from "react";
+
 const WebsiteUpload = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => setTime(new Date()), 1000);
+  }, []);
+
   return (
     <div
       className="min-h-screen w-full flex place-items-center bg-[url('../public/bg6.jpg')] bg-center bg-no-repeat bg-cover"
@@ -205,7 +213,7 @@ const WebsiteUpload = () => {
                 type="text"
                 name=""
                 id=""
-                value={`asdasdasdsad`}
+                value={time.toLocaleString()}
                 className="border border-gray-200 rounded-md px-3 py-1"
                 readOnly
               />
