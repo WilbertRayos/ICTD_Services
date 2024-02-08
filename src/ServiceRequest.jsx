@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 const ServiceRequest = () => {
+  const [branches, setBranches] = useState([
+    { name: "Industry Planning and Management Branch", id: 1 },
+  ]);
+  const [divisions, setDivisions] = useState([
+    { name: "Industry Planning and Research Division", id: 1 },
+    { name: "Information and Communications Technology Division", id: 2 },
+  ]);
+
   return (
     <div
       className="flex min-h-screen w-full place-items-center bg-[url('../public/bg1.jpg')] bg-center bg-no-repeat bg-cover"
@@ -18,10 +28,9 @@ const ServiceRequest = () => {
                     BRANCH
                   </label>
                   <select className="border border-gray-200 rounded-md px-3 py-1">
-                    <option value="ab">Administrative Branch</option>
-                    <option value="pfmb">
-                      Planning, Finance, and Management Branch
-                    </option>
+                    {branches.map((branch) => (
+                      <option key={branch.id}>{branch.name}</option>
+                    ))}
                   </select>
                 </div>
                 <div className="flex flex-col">
