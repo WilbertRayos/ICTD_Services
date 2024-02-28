@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import offices from "./json/offices.json";
 
 const ServiceRequest = () => {
-  const [branches, setBranches] = useState([
-    { name: "Industry Planning and Management Branch", id: 1 },
-  ]);
-  const [divisions, setDivisions] = useState([
-    { name: "Industry Planning and Research Division", id: 1 },
-    { name: "Information and Communications Technology Division", id: 2 },
-  ]);
+  const [officesInfo, setOfficesInfo] = useState(null);
+  const [branchInfo, setBranchInfo] = useState("Administrative Branch");
+  const [divisionInfo, setDivisionInfo] = useState(null);
+
+  useEffect(() => {
+    setOfficesInfo(offices);
+  }, []);
+
+  const sample1 = (event) => {
+    setBranchInfo(event.target.value);
+  };
 
   return (
     <div
@@ -27,10 +32,16 @@ const ServiceRequest = () => {
                   <label for="" className="font-semibold my-2 text-[#31393C]">
                     BRANCH
                   </label>
-                  <select className="border border-gray-200 rounded-md px-3 py-1">
-                    {branches.map((branch) => (
-                      <option key={branch.id}>{branch.name}</option>
-                    ))}
+                  <select
+                    className="border border-gray-200 rounded-md px-3 py-1"
+                    onChange={sample1}
+                  >
+                    {officesInfo &&
+                      officesInfo.branches.map((branch, index) => (
+                        <option key={index} value={branch.name}>
+                          {branch.name}
+                        </option>
+                      ))}
                   </select>
                 </div>
                 <div className="flex flex-col">
@@ -38,10 +49,16 @@ const ServiceRequest = () => {
                     DIVISION
                   </label>
                   <select className="border border-gray-200 rounded-md px-3 py-1">
-                    <option value="ab">Administrative Branch</option>
-                    <option value="pfmb">
-                      Planning, Finance, and Management Branch
-                    </option>
+                    {officesInfo &&
+                      officesInfo.branches
+                        .filter((branch) => branch.name === branchInfo)
+                        .map((branch) =>
+                          branch.divisions.map((division) => (
+                            <option value={division.name}>
+                              {division.name}
+                            </option>
+                          ))
+                        )}
                   </select>
                 </div>
                 <div className="flex flex-col">
