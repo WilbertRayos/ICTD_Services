@@ -1,156 +1,46 @@
 {
   "branches": [
     {
-      "id": 1,
-      "name": "Commissioner's Office",
-      "divisions": [
-        {
-          "name": "",
-          "units": []
-        },
-        {
-          "name": "Deputy Commissioner: Atty. Salvahan",
-          "units": []
-        },
-        {
-          "name": "Deputy Commissioner: Engr. Blanco",
-          "units": []
-        },
-        {
-          "name": "Commission Secretariat",
-          "units": []
-        },
-        {
-          "name": "Broadcast Services Division",
-          "units": []
-        },
-        {
-          "name": "Equipment Standards Division",
-          "units": []
-        },
-        {
-          "name": "Internal Audit Division",
-          "units": []
-        },
-        {
-          "name": "Radio Spectrum Planning Division",
-          "units": []
-        }
-      ]
-    },
-    {
       "id": 2,
       "name": "Administrative Branch",
       "divisions": [
         {
+          "id": 1,
           "name": "",
-          "units": []
-        },
-        {
-          "name": "General Services Division",
           "units": [
-            "Records Section",
-            "Procurement Management Unit",
-            "Cashier Unit"
+            {
+              "id": 1,
+              "name": ""
+            }
           ]
         },
         {
+          "id": 2,
+          "name": "General Services Division",
+          "units": [
+            {
+              "id": 1,
+              "name": "Records Section"
+            },
+            {
+              "id": 2,
+              "name": "Procurement Management Unit"
+            },
+            {
+              "id": 3,
+              "name": "Cashier Unit"
+            }
+          ]
+        },
+        {
+          "id": 3,
           "name": "Human Resource Division",
-          "units": []
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Planning, Financial & Management Branch",
-      "divisions": [
-        {
-          "name": "Finance Division",
-          "units": []
-        },
-        {
-          "name": "Management Division",
-          "units": []
-        },
-        {
-          "name": "Corporate Planning & Programming Division",
-          "units": []
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Industry Planning & Management Branch",
-      "divisions": [
-        {
-          "name": "",
-          "units": []
-        },
-        {
-          "name": "Industry Planning & Research Division",
-          "units": []
-        },
-        {
-          "name": "Information and Communications Technology Division",
-          "units": []
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Special Licensing Branch",
-      "divisions": [
-        {
-          "name": "",
-          "units": []
-        },
-        {
-          "name": "Special Radio Services Division",
-          "units": []
-        },
-        {
-          "name": "Safety Radio Services & STCW Compliance Division",
-          "units": []
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Regulation Branch",
-      "divisions": [
-        {
-          "name": "",
-          "units": []
-        },
-        {
-          "name": "Networks & Facilities Division",
-          "units": []
-        },
-        {
-          "name": "Services & Interconnection Division",
-          "units": []
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Legal Branch",
-      "divisions": [
-        {
-          "name": "",
-          "units": []
-        },
-        {
-          "name": "Internal Legal Affairs Division",
-          "units": []
-        },
-        {
-          "name": "Adjudication Division",
-          "units": []
-        },
-        {
-          "name": "Consumer Welfare & Protection Division",
-          "units": []
+          "units": [
+            {
+              "id": 1,
+              "name": ""
+            }
+          ]
         }
       ]
     }

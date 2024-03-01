@@ -14,6 +14,14 @@ const ServiceRequest = () => {
     setBranchInfo(event.target.value);
   };
 
+  const sample2 = (event) => {
+    setDivisionInfo(event.target.value);
+  };
+
+  useEffect(() => {
+    console.log("wews");
+  });
+
   return (
     <div
       className="flex min-h-screen w-full place-items-center bg-[url('../public/bg1.jpg')] bg-center bg-no-repeat bg-cover"
@@ -48,13 +56,16 @@ const ServiceRequest = () => {
                   <label for="" className="font-semibold my-2 text-[#31393C]">
                     DIVISION
                   </label>
-                  <select className="border border-gray-200 rounded-md px-3 py-1">
+                  <select
+                    className="border border-gray-200 rounded-md px-3 py-1"
+                    onClick={sample2}
+                  >
                     {officesInfo &&
                       officesInfo.branches
                         .filter((branch) => branch.name === branchInfo)
                         .map((branch) =>
-                          branch.divisions.map((division) => (
-                            <option value={division.name}>
+                          branch.divisions.map((division, index) => (
+                            <option key={index} value={division.name}>
                               {division.name}
                             </option>
                           ))
@@ -66,31 +77,49 @@ const ServiceRequest = () => {
                     UNIT
                   </label>
                   <select className="border border-gray-200 rounded-md px-3 py-1">
-                    <option value="ab">Administrative Branch</option>
-                    <option value="pfmb">
-                      Planning, Finance, and Management Branch
-                    </option>
+                    {officesInfo &&
+                      officesInfo.branches
+                        .filter((branch) => branch.name === branchInfo)
+                        .map((branch) =>
+                          branch.divisions
+                            .filter(
+                              (division) => division.name === divisionInfo
+                            ) // Filter divisions based on selected division
+                            .map((division) =>
+                              division.units.map((unit, index) => (
+                                <option key={index} value={unit.name}>
+                                  {unit.name}
+                                </option>
+                              ))
+                            )
+                        )}
                   </select>
                 </div>
                 <div className="flex flex-col">
-                  <label for="" className="font-semibold my-2 text-[#31393C]">
+                  <label
+                    for="requestor"
+                    className="font-semibold my-2 text-[#31393C]"
+                  >
                     REQUESTOR
                   </label>
                   <input
                     className="border border-gray-200 rounded-md px-3 py-1"
                     type="text"
-                    name=""
-                    id=""
+                    name="requestor"
+                    id="requestor"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label for="" className="font-semibold my-2 text-[#31393C]">
+                  <label
+                    for="issues"
+                    className="font-semibold my-2 text-[#31393C]"
+                  >
                     ISSUE/S ENCOUNTERED
                   </label>
                   <textarea
                     className="border border-gray-200 rounded-md p-3 resize-none"
-                    name=""
-                    id=""
+                    name="issues"
+                    id="issues"
                     cols="5"
                     rows="5"
                     placeholder="Please specify issue/s you encountered..."
@@ -118,9 +147,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="microsoft_office"
+                      name="service"
+                      value="microsoft_office"
                       className="mx-1"
                     />
                     <label for="html">Microsoft Office</label>
@@ -128,9 +157,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="anti_virus"
+                      name="service"
+                      value="Hanti_virus"
                       className="mx-1"
                     />
                     <label for="html">Anti-virus</label>
@@ -138,9 +167,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="driver"
+                      name="service"
+                      value="driver"
                       className="mx-1"
                     />
                     <label for="html">Printer/Scanner Drivers</label>
@@ -148,9 +177,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="email"
+                      name="service"
+                      value="email"
                       className="mx-1"
                     />
                     <label for="html">Email</label>
@@ -176,9 +205,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="cpu"
+                      name="service"
+                      value="cpu"
                       className="mx-1"
                     />
                     <label for="html">CPU</label>
@@ -186,9 +215,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="monitor"
+                      name="service"
+                      value="monitor"
                       className="mx-1"
                     />
                     <label for="html">Monitor</label>
@@ -196,9 +225,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="printer"
+                      name="service"
+                      value="printer"
                       className="mx-1"
                     />
                     <label for="html">Printer/Scanner</label>
@@ -206,9 +235,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="laptop"
+                      name="service"
+                      value="laptop"
                       className="mx-1"
                     />
                     <label for="html">Laptop</label>
@@ -234,9 +263,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="internet"
+                      name="service"
+                      value="internet"
                       className="mx-1"
                     />
                     <label for="html">Internet</label>
@@ -244,9 +273,9 @@ const ServiceRequest = () => {
                   <div>
                     <input
                       type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
+                      id="lan"
+                      name="service"
+                      value="lan"
                       className="mx-1"
                     />
                     <label for="html">Local Area Network</label>
@@ -271,8 +300,8 @@ const ServiceRequest = () => {
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-5">
                   <div className="flex flex-col">
                     <textarea
-                      name=""
-                      id=""
+                      name="others"
+                      id="others"
                       cols="5"
                       rows="5"
                       className="border border-gray-200 rounded-md p-1 resize-none"
